@@ -1,4 +1,4 @@
-const BACKEND_BASE_URL = 'http://localhost:8000'
+const BACKEND_BASE_URL = ''
 
 type ComplianceTaskDraft = {
   title: string
