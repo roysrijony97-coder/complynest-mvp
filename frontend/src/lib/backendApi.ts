@@ -1,4 +1,4 @@
-const BACKEND_BASE_URL = '/_/backend'
+const BACKEND_BASE_URL = '/api'
 
 type ComplianceTaskDraft = {
   title: string
