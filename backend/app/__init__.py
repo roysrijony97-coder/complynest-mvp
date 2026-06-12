@@ -1,0 +1,1 @@
+# FastAPI app package marker for Vercel Python imports.
