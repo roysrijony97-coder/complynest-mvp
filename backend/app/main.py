@@ -38,11 +38,13 @@ app.add_middleware(
 
 
 @app.get("/health", response_model=HealthResponse)
+@app.get("/api/health", response_model=HealthResponse)
 def health_check() -> HealthResponse:
     return HealthResponse(status="ok")
 
 
 @app.post("/tasks", response_model=TaskCreateResponse)
+@app.post("/api/tasks", response_model=TaskCreateResponse)
 def create_task(payload: TaskCreateRequest) -> TaskCreateResponse:
     try:
         supabase = get_supabase_client()
